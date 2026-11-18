@@ -1,0 +1,33 @@
+
+# Python environment
+.venv/
+venv/
+env/
+
+# Python cache
+__pycache__/
+*.py[cod]
+
+# Project archives
+archive/
+archieve/
+
+# Downloaded videos
+downloads/
+Output videos/
+outputs/
+
+# YOLO model weights
+*.pt
+
+# Environment secrets
+.env
+.streamlit/secrets.toml
+
+# IDE files
+.vscode/
+.idea/
+
+# OS files
+.DS_Store
+Thumbs.db
