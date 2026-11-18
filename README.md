@@ -53,9 +53,9 @@ computer-vision analysis engine.
 
 ``` mermaid
 flowchart TD
-    A[User] --> B[Streamlit Dashboard - app.py]
-    B --> C{Select video source}
-    C --> D[Upload local video]
+    A[User] --> B[Dashboard]
+    B --> C{Select video }
+    C --> D[Upload local ]
     C --> E[Local video path]
     C --> F[YouTube URL]
     F --> G[yt-dlp download]
@@ -64,16 +64,16 @@ flowchart TD
     G --> H
 
     H --> I[Preview frame]
-    I --> J[User selects 4 court corners]
-    J --> K[Perspective transform / court calibration]
-    K --> L[Analyzer engine - analyzer.py]
+    I --> J[selects 4 corners]
+    J --> K[court calibration]
+    K --> L[Analyzer engine ]
 
-    L --> M[OpenCV frame processing]
-    M --> N[YOLOv8 Pose detection]
-    N --> O[Player positions and pose landmarks]
-    O --> P[Tracking and movement calculations]
-    P --> Q[Stroke event estimation]
-    Q --> R[Rally segmentation and statistics]
+    L --> M[frame processing]
+    M --> N[YOLOv8 detection]
+    N --> O[Player positions]
+    O --> P[movement calculations]
+    P --> Q[event estimation]
+    Q --> R[Rally statistics]
 
     R --> S[Annotated video]
     R --> T[Player and court metrics]
@@ -82,9 +82,7 @@ flowchart TD
     U --> V
     S --> V
 
-    V --> W[CSV exports]
-    V --> X[JSON summary]
-    V --> Y[Annotated video export]
+  
 ```
 
 ### Processing flow
